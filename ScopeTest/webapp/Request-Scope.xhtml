@@ -1,0 +1,45 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/defaultTemplate.xhtml">
+
+	<ui:define name="header">
+        Scope-Test: Request-Scope
+    </ui:define>
+	<ui:define name="navbar">
+
+<!-- 			<p:outputLabel>ApplicationScopeItems</p:outputLabel> -->
+<!-- 			<ui:repeat value="#{applicationBean.items}" var="item"> -->
+<!-- 				<h:panelGrid columns="1" cellpadding="5"> -->
+<!-- 					<p:outputLabel value="#{item}" -->
+<!-- 						style="font-weight: bold; font-size:1.0em" /> -->
+<!-- 				</h:panelGrid> -->
+<!-- 			</ui:repeat> -->
+			
+	<h:form>
+		<ui:repeat value="#{requestBean.items}" var="item">
+			<h:panelGrid columns="1" cellpadding="5">
+				<p:outputLabel value="#{item}"
+					style="font-weight: bold; font-size:1.0em" />
+			</h:panelGrid>
+		</ui:repeat>
+		<p:commandButton value="Clear" onclick="location.reload()"></p:commandButton>
+	</h:form>
+	
+	</ui:define>
+	<ui:define name="content">
+		<h:form>
+			<p:inputText placeholder="Eingabe" value="#{requestBean.item}"
+				style="margin-right: 0.5em" />
+			<p:commandButton value="Add String" action="#{requestBean.addItem}"></p:commandButton>
+			<h:panelGrid columns="1" cellpadding="5">
+				<p:commandButton value="Refresh Site" onclick="location.reload()"></p:commandButton>
+				<p:commandButton value="View-Scope" action="View-Scope.xhtml"></p:commandButton>
+				<p:commandButton value="Session-Scope" action="Session-Scope.xhtml"></p:commandButton>
+			</h:panelGrid>
+		</h:form>
+	</ui:define>
+</ui:composition>

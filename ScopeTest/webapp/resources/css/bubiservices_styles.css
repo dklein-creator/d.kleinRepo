@@ -1,0 +1,348 @@
+/***** MAINSETTINGS *****/
+body {
+    font-family: Roboto;
+    font-size: 1.0em;
+    margin: 10px;
+}
+
+.ui-panelgrid tr,
+.ui-panelgrid td {
+    border: white;
+}
+
+/***** DATATABLES *****/
+.ui-datatable table {
+    table-layout: auto !important;
+}
+
+/***** TABLES *****/
+#tblShowAllTable {
+    box-shadow: 2px 2px 2px 2px #8f8f8f;
+    padding: 10px;
+}
+
+#firstColumn {
+    width: 200px;
+}
+
+#secondColumn {
+    width: 300px;
+}
+
+#thirdColumn {      
+    width: 50px;
+}
+
+#fourthColumn {
+    width: 200px;
+}
+
+#fifthColumn {
+    width: 300px;
+}
+
+#sixthColumn {  
+    width: 50px;
+}
+
+#seventhColumn {
+    width: 200px;
+}
+
+#eighthColumn {
+    width: 300px;
+}
+
+#firstColumnSmall {
+    width: 150px;
+}
+
+#secondColumnSmall {
+    width: 100px;
+}
+
+#thirdColumnSmall {      
+    width: 100px;
+}
+
+#fourthColumnSmall {
+    width: 150px;
+}
+
+#fifthColumnSmall {
+    width: 100px;
+}
+
+#sixthColumnSmall {  
+    width: 100px;
+}
+
+#seventhColumnSmall {
+    width: 100px;
+}
+
+#eighthColumnSmall {
+    width: 100px;
+}
+
+#tblUpdateRv {
+    box-shadow: 2px 2px 2px 2px #8f8f8f;
+    padding: 10px;
+}
+
+/***** BUTTONSTYLES *****/
+.ui-button.ui-state-default {
+    margin: 0px 0px 3px 0px !important;
+}
+
+.ui-button.ui-state-hover {
+    color: whitesmoke !important;
+    background-color: #144F80 !important;
+}
+
+.ui-button.ui-state-active {
+    background-color: #E91D26 !important;
+}
+
+.smallButtonLeft.ui-button.ui-state-default {
+    float: left !important;
+    margin: 0px 0px 3px 0px !important;
+    font-size: 0.8em !important;
+}
+
+.smallButtonRight.ui-button.ui-state-default {
+    float: right !important;
+    margin: 0px 0px 3px 0px !important;
+    font-size: 0.8em !important;
+}
+
+/***** HEADER *****/
+#header {
+    width: 100%;
+    height: 64px;
+    background: rgb(13, 70, 116);
+    color: white;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0px;
+}
+
+#header_blackframe {
+    width: 100%;
+    height: 150px;
+    margin: 0px auto auto auto;
+    vertical-align: middle;
+    height: 64px;
+    width: 60%;
+    padding: 0 40px 0 40px;
+}
+
+#header_logo {
+    float: left;
+    margin-left: -32px;
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
+}
+
+#header_def_title {
+    float: left;
+    font-size: 1.5em;
+    letter-spacing: 0px;
+    color: white;
+    margin-left: 6px;
+    margin-top: 18px;
+}
+
+#header_title {
+    float: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    color: white;
+    /*text-shadow: 0.1em 0.1em 0.5em #FFFFFF;*/
+    margin-top: 17px;
+    margin-right: -22px;
+}
+
+/***** LEFT MENUBAR *****/
+#navbar {
+    float: left;
+    margin-left: 0px;
+    padding: 10px;
+    width: 250px;
+}
+
+/***** CONTENT *****/
+.center_content {
+    padding: 0px;
+    margin-top: -3px;
+    margin-left: 0px;
+}
+
+/***** FOOTER *****/
+#footer {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: -10px;
+    text-align: center;
+    color: #000000;
+    font-size: 0.85em;
+    text-shadow: 0.05em 0.05em 0.1em #666666;
+}
+
+/***** SPECIALS *****/
+.center_content {
+    margin: 0 auto;
+}
+
+.center_form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.infoTableHeader {
+    font-family: Roboto;
+    font-size: 1.15em;
+    font-weight: bolder;
+   /* text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);*/
+    color: darkblue;
+}
+
+.infoLabelText {
+    font-family: Roboto;
+    font-size: 0.9em;
+}
+
+.infoOutputText {
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);*/
+    color: #2d4899;
+}
+
+/********** for Project WebServiceCenterCorporateBookings **********/
+.wsccbInsertPanelS {
+    width: 650px !important;
+}
+
+.wsccbUpdatePanelS {
+    width: 650px !important;
+}
+
+.wsccbSelectPanelXL {
+    width: 1000px !important;
+}
+
+.wsccbInsertPanelGrid {
+    width: 600px !important;
+}
+
+.wsccbUpdatePanelGrid {
+    width: 600px !important;
+}
+
+.wsccbBtnInsert {
+    float:right !important; 
+    margin:-6px 0px -3px 50px !important; 
+    font-size:0.8em !important;
+}
+
+.wsccbBtnUpdate {
+    float:right !important; 
+    margin:-6px 0px -3px 50px !important; 
+    font-size:0.8em !important;
+}
+
+.wsccbBtnSelect {
+    float:left !important; 
+    margin:-6px 0px -3px 50px !important; 
+    font-size:0.8em !important;
+}
+
+.wsccbInputTextLeftXS {
+    width:75px !important;
+    text-align: left;
+}
+.wsccbInputTextCenterXS {
+    width:75px !important;
+    text-align: center;
+}
+
+.wsccbInputTextLeftS {
+    width:100px !important;
+    text-align:left;
+}
+
+.wsccbInputTextCenterS {
+    width:100px !important;
+    text-align:center;
+}
+
+.wsccbInputTextLeftM {
+    width:150px !important;
+    text-align:left;
+}
+
+.wsccbInputTextCenterM {
+    width:150px !important;
+    text-align:center;
+}
+
+.wsccbInputTextLeftL {
+    width:200px !important;
+    text-align:left;
+}
+
+.wsccbOutputTextLeftS {
+    width:100px !important;
+    text-align:left;
+}
+
+.wsccbOutputTextLeftL {
+    width:200px !important;
+    text-align:left;
+}
+
+.wsccbSelectOneMenuS {
+    width:110px !important;
+    text-align: center;
+}
+
+.wsccbSelectOneMenuL {
+    float:left !important; 
+    width:320px !important;
+    text-align: center;
+}
+
+.wsccbSelectedItemsManyMenu {
+    font-size: 0.8em;
+}
+
+/*.ui-layout-unit {
+    padding: 0 !important;
+}*/
+
+/*.ui-widget-content {
+    border: 0;
+}*/
+
+.ui-layout-unit {
+    padding: 0 !important;
+}
+.ui-panel {
+    padding: 0 !important;
+}
+
+.karvebookingmonitoring .global{
+            	color: rgb(0, 102, 255);      
+            }
+.karvebookingmonitoring .interrent{
+            	color: rgb(13, 70, 116);       
+            }
+.karvebookingmonitoring .buchbinder{
+            	color: red;        
+            }

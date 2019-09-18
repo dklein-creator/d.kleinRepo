@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet name="css/bubiservices_styles.css" />
+	<h:outputScript name="js/defaultJavaScript.js" />
+	<div id="title"></div>
+</h:head>
+
+<h:body>
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" resizable="true" closable="true"
+			collapsible="true">
+			<div id="header">
+				<div id="header_blackframe">
+					<!-- <div id="header_logo">
+                                <h:graphicImage value="/resources/images/Buchbinder_Logo.png" alt="Bubinet-ServiceBB" height="60" width="60"/>
+                            </div>
+                            <div id="header_logo" />
+                            <div id="header_logo" />
+                            <div id="header_logo">
+                                <h:graphicImage value="/resources/images/Global_Logo.png" alt="Bubinet-ServiceGD" height="60" width="60"/>
+                            </div>
+                            <div id="header_logo" />
+                            <div id="header_logo" />
+                            <div id="header_logo">
+                                <h:graphicImage value="/resources/images/Interrent_Logo.png" alt="Bubinet-ServiceIR" height="60" width="60"/>
+                            </div>
+                            <div id="header_logo" />
+                            <div id="header_logo" />
+                            <div id="header_def_title">
+                                WebServices2
+                            </div> -->
+					<div id="header_title">
+						<ui:insert name="header">
+						</ui:insert>
+					</div>
+				</div>
+			</div>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west" header="Gespeicherte Strings"
+			collapsible="false" size="262">
+			
+			<p:outputLabel>ApplicationScopeItems</p:outputLabel>
+			<ui:repeat value="#{applicationBean.items}" var="item">
+				<h:panelGrid columns="1" cellpadding="5">
+					<p:outputLabel value="#{item}"
+						style="font-weight: bold; font-size:1.0em" />
+				</h:panelGrid>
+			</ui:repeat>
+			
+			<ui:insert name="navbar">
+				<!--                    <h:form>
+                        <p:commandButton 
+                            style="float:left; margin:0px 0px 3px 0px; font-size:0.8em" 
+                            action="#{logoutBean.logout}" 
+                            value="Logout" /> 
+                    </h:form>      -->
+			
+			</ui:insert>
+		</p:layoutUnit>
+		<p:layoutUnit position="center">
+			<div id="content" class="center_content">
+				<ui:insert name="content">[Template content will be inserted here]</ui:insert>
+			</div>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="south" closable="true" collapsible="true">
+			<div id="footer">
+				<ui:insert name="footer">© 2015 Buchbinder Autovermietung, IT Duisburg</ui:insert>
+			</div>
+		</p:layoutUnit>
+
+	</p:layout>
+	<p:ajaxStatus onstart="PF('statusDialog').show()"
+		onsuccess="PF('statusDialog').hide()" />
+	<!-- <p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+            <p:graphicImage name="images/ajax-loader.gif" />
+        </p:dialog> -->
+</h:body>
+</html>

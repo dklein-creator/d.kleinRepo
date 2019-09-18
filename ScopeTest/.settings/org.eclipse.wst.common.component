@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WebKarveBookingHistory-2.3.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/webapp"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="BuchbinderBasics-2.19.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BuchbinderBasics/BuchbinderBasics">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Sybase-1.7.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Sybase/Sybase">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MySql-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MySql/MySql">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Db2-1.7.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Db2/Db2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Karve-1.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Karve/Karve">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DbRentfox-1.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DbRentfox/DbRentfox">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BuchbinderUtils-1.3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/BuchbinderUtils/BuchbinderUtils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WebBasicsDevelop-2.3.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/WebBasicsDevelop/WebBasicsDevelop">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databases-1.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Databases/Databases">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/ScopeTest/build/classes"/>
+        <property name="context-root" value="WebKarveBookingHistory"/>
+    </wb-module>
+</project-modules>
